@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    
+/*
+Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Relativas
+em, ex, rem, vw, vh, %
+
+A recomendação do W3Schools é que se use apenas o em e o px
+
+16px é o tamanho padrão do navegador
+16px geralmente é igual a 1em
+*/
+ /*
+weight: siginifica peso
+height: altura
+width: largura
+*/
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em ;
+    /*font-weight: normal ;
+    font-style: italic;
+    text-decoration: underline;
+*/
+   
+}
+h1{
+    /*
+  Maneira Normal
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+*/
+    /*
+    shorthand font
+    -font-style -> font-weight -> font-size -> font-family
+    */
+
+    font: italic bolder 3em 'Work Sans', sans-serif;
+}
+
+h2{
+    font: bold 2em 'Work Sans';
+}
+
