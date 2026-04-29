@@ -40,12 +40,12 @@ header > p{
   }
 
 main > section > p{
-    max-width: 40%;
+    max-width: 300px;
     padding: 2em;
     font-family: "Sriracha", cursive;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    font-size: 25px;
+    font-size: 30px;
     
     
 }
