@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    background-image: url("/desafios/d011/imagens/espaco.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
