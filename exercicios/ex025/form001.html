@@ -8,14 +8,47 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 200px;
+            margin-bottom: 10px;
+            
+        }
+        #inome{
+            margin-left: 40px;
+        }
+        #enviar{
+            margin-left: 30px;
+        }
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form >
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+
+        <section>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </section>
+
+        <section>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </section>
+
+        <input type="submit" value="Enviar" id="enviar">
 
     </form>
 </body>
