@@ -4,22 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+        }
+        h1{
+            margin-bottom: 50px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 200px;
+            margin-bottom: 15px;
+            
+        }
+        #iusu{
+            margin-left: 30px;
+        }
+        #isen{
+            margin-left: 40px;
+        }
+        
+        .botao{
+            
+            width: 100px;
+        }
+        #botao1{
+            margin-left: 3em;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="POST">
-        <p>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <div>
             <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu">
-        </p>
-        <p>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="18" size="10" placeholder="nome do usuario" autocomplete="username">
+        </div>
+        <div>
             <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="botao1" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </div>
     </form>
 </body>
 </html>
